@@ -22,7 +22,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Install cibuildwheel
-      run: python3 -m pip install cibuildwheel==3.4.1
+      run: python3 -m pip install cibuildwheel==4.3.5
 
     - name: Build wheels
       run: python3 -m cibuildwheel --output-dir wheelhouse
@@ -51,7 +51,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
 
     - name: Install cibuildwheel
-      run: python3 -m pip install cibuildwheel==3.4.1
+      run: python3 -m pip install cibuildwheel==4.3.5
 
     - name: Build wheels
       run: python3 -m cibuildwheel --output-dir wheelhouse
